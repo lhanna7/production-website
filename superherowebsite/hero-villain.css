@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 400%;
+    text-align: center;
+}

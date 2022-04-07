@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+body {
+    background-image: url(images/space-stars.gif);
+}
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 400%;
+    text-align: center;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.hero-left {
+    background-image: url(images/sky.gif);
+    padding: 70px;
+    border-radius: 50px;
+}
+
+.heroTitle {
+    display: flex;
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 500%;
+    text-decoration: none;
+    color: rgb(0, 63, 114);
+}
+
+.villain-right {
+    background-image: url(images/fire.gif);
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.villainTitle {
+    display: flex;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 400%;
+    text-decoration: none;
+    color: black;
+}
