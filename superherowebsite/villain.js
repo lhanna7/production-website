@@ -7,17 +7,21 @@ $main.innerHTML = `
 
 fetch(`https://akabab.github.io/superhero-api/api/all.json`)
     .then((response) => response.json())
-    .then((parsedResponse) => {
-        parsedResponse
-            // .filter(allSupers => allSupers.alignment === "good")
-            .forEach(response =>
-                buildList(response))
+    .then((listOfSupers) => {
+        listOfSupers
+            .filter(supervillain => {
+                console.log(supervillain)
+                return supervillain.biography.alignment === "bad"
+            })
+            .forEach(supervillain =>
+                buildList(supervillain))
     })
 
-function buildList(allSupers) {
+
+function buildList(supervillain) {
     const $span = document.createElement("span")
     $span.innerHTML = `
-        <a href="stats.html?id=${allSupers.id}">${allSupers.name}</a>
+        <a href="stats.html?id=${supervillain.id}">${supervillain.name}</a>
     `
     $main.append($span)
 }

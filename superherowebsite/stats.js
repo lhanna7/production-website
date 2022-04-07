@@ -3,12 +3,14 @@ $main = document.querySelector("main")
 function superOverview(hero) {
     const $div = document.createElement("div")
     $div.innerHTML = `
+        <a href="index.html">Return Home</a>
         <h2>${hero.name}</h2>
         <img src="${hero.images.md}">
         <ul class="bio">
             <li>Full Name: ${hero.biography.fullName}</li>
             <li>Alter Egos: ${hero.biography.alterEgos}</li>
             <li>Aliases: ${hero.biography.aliases}</li>
+            <li>Universe: ${hero.biography.publisher}</li>
         </ul>
         <ul class="stat-stuff">
             <li>Intelligence: ${hero.powerstats.intelligence}</li>
@@ -35,5 +37,4 @@ fetch(`https://akabab.github.io/superhero-api/api/id/${queryString.get("id")}.js
     .then((parsedResponse) => {
         const newObject = parsedResponse
         superOverview(newObject)
-        // console.log(superOverview(newObject))
     })
