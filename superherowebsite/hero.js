@@ -13,10 +13,11 @@ fetch(`https://akabab.github.io/superhero-api/api/all.json?limit=50`)
                 buildList(response))
     })
 
+
 function buildList(allSupers) {
     const $span = document.createElement("span")
     $span.innerHTML = `
-        <a href="stats.html?hero=${allSupers.name}">${allSupers.name}</a>
+        <a href="stats.html?id=${allSupers.id}">${allSupers.name}</a>
     `
     $main.append($span)
 }
