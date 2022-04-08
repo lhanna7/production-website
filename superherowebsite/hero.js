@@ -2,7 +2,7 @@ const $main = document.querySelector("main")
 const $div = document.querySelector("div")
 
 $div.innerHTML = `
-    <a href="index.html">Changed Your Mind? Click Here To Reconsider Your Choice</a>
+    <a href="index.html" class="return-button">Changed Your Mind? Click Here To Reconsider Your Choice</a>
 `
 
 fetch(`https://akabab.github.io/superhero-api/api/all.json`)
