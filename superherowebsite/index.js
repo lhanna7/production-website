@@ -10,3 +10,14 @@ $villain.innerHTML = `
     <a href="villain.html" class="villainTitle">VILLAIN</a>
 `
 
+const $submit = document.querySelector("#clicky")
+const $form = document.querySelector("form")
+
+$form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const firstName = formData.get("first-name")
+    const lastName = formData.get("last-name")
+    $submit.value = "Done!"
+    console.log(firstName, lastName)
+})

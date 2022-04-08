@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 body {
     background-image: url(images/space-stars.gif);
@@ -24,7 +25,7 @@ main {
 }
 
 form {
-    margin: 100px;
+    margin: 40px;
 }
 
 #first-name,
@@ -36,6 +37,7 @@ form {
     color: black;
     font-size: larger;
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
 }
 
 #clicky {
@@ -49,6 +51,18 @@ form {
     color: white;
     font-size: larger;
     border: solid 1px white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#clicky:hover {
+    padding: 10px 100px;
+    background-image: url(images/zoomstar.gif);
+    background-size: 100%;
+    color: white;
+    font-size: larger;
+    border: solid 1px rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -64,6 +78,13 @@ form {
     background-image: url(images/sky.gif);
     padding: 70px;
     border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hero-left:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 40px 30px rgba(40, 85, 151, 0.7);
 }
 
 .heroTitle {
@@ -77,8 +98,16 @@ form {
 .villain-right {
     display: flex;
     background-image: url(images/fire.gif);
+    background-size: 130%;
     padding: 100px 80px;
     border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.villain-right:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 40px 30px rgba(173, 55, 0, 0.7);
 }
 
 .villainTitle {
