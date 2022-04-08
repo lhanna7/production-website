@@ -1,6 +1,7 @@
 const $main = document.querySelector("main")
+const $div = document.querySelector("div")
 
-$main.innerHTML = `
+$div.innerHTML = `
     <a href="index.html">Changed Your Mind? Click Here To Reconsider Your Choice</a>
 `
 

@@ -4,9 +4,11 @@
 
 body {
     background-image: url(images/space-stars.gif);
+    display: flex;
+    flex-direction: column;
 }
 
-header {
+h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 400%;
     text-align: center;
@@ -16,13 +18,49 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+
+}
+
+form {
+    margin: 100px;
+}
+
+#first-name,
+#last-name {
+    padding: 20px;
+    border-radius: 100px;
+    background-image: url(images/galaxy-space.gif);
+    background-size: 100%;
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+
+#clicky {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 100px;
+    background-image: url(images/zoomstar.gif);
+    background-size: 100%;
+    color: white;
+    font-size: larger;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+.bottom-half {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin-top: 10%;
+    width: 70%;
 }
 
 .hero-left {
+    display: flex;
     background-image: url(images/sky.gif);
     padding: 70px;
     border-radius: 50px;
@@ -37,8 +75,9 @@ main {
 }
 
 .villain-right {
+    display: flex;
     background-image: url(images/fire.gif);
-    padding: 100px;
+    padding: 100px 80px;
     border-radius: 50px;
 }
 

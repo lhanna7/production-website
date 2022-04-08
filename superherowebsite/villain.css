@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 400%;
+    text-align: center;
+}
+
+main {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.return-button {
+    font-family: 'Permanent Marker', cursive;
+    padding: 3% 0% 5% 3%;
+}
+
+main span {
+    font-family: 'Rubik Wet Paint', cursive;
+
+}
+
+a {
+    text-decoration: none;
+}
