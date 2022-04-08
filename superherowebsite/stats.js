@@ -3,7 +3,7 @@ $main = document.querySelector("main")
 function superOverview(hero) {
     const $div = document.createElement("div")
     $div.innerHTML = `
-        <a href="index.html">Return Home</a>
+        <a href="index.html" class="return-button">Return Home</a>
         <h2>${hero.name}</h2>
         <img src="${hero.images.md}">
         <ul class="bio">
