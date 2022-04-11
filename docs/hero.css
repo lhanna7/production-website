@@ -5,6 +5,8 @@
 
 body {
     background-image: url(images/olympus.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
