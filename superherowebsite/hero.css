@@ -63,3 +63,11 @@ a {
 a:hover {
     font-size: 130%;
 }
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgba(243, 158, 46, 0.5);
+    border: solid 1px white;
+}

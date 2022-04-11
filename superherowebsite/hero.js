@@ -1,5 +1,10 @@
 const $main = document.querySelector("main")
 const $div = document.querySelector("div")
+const $h1 = document.querySelector("h1")
+
+$h1.innerHTML = `
+    <p>Hello, ${localStorage.getItem("first-name")} ${localStorage.getItem("last-name")}! Click on a hero to learn more about them.</p>
+`
 
 $div.innerHTML = `
     <a href="index.html" class="return-button">Changed Your Mind? Click Here To Reconsider Your Choice</a>

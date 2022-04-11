@@ -82,4 +82,5 @@ ul {
     flex-direction: column;
     padding: 30px;
     grid-area: 2;
+    font-size: 150%;
 }

@@ -19,5 +19,9 @@ $form.addEventListener("submit", (event) => {
     const firstName = formData.get("first-name")
     const lastName = formData.get("last-name")
     $submit.value = "Done!"
-    console.log(firstName, lastName)
+
+    localStorage.setItem("first-name", firstName)
+    localStorage.setItem("last-name", lastName)
+    console.log(localStorage.getItem("first-name"), localStorage.getItem("last-name"))
 })
+
