@@ -29,7 +29,7 @@ $form.addEventListener("submit", (event) => {
     bottomHalf.forEach(element => {
         element.classList.remove("hidden")
     })
-})
 
-const h1 = document.querySelector(".Title")
-h1.textContent = `${localStorage.getItem("first-name")},Choose Your Affilliation`
+    const h1 = document.querySelector(".Title")
+    h1.textContent = `${localStorage.getItem("first-name")},Choose Your Affilliation`
+})

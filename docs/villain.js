@@ -20,6 +20,8 @@ fetch(`https://akabab.github.io/superhero-api/api/all.json`)
             })
             .forEach(supervillain =>
                 buildList(supervillain))
+    }).catch(error => {
+        console.error(error.message)
     })
 
 function buildList(supervillain) {
