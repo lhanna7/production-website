@@ -3,7 +3,7 @@ const $div = document.querySelector("div")
 const $h1 = document.querySelector("h1")
 
 $h1.innerHTML = `
-    <p>Hello, ${localStorage.getItem("first-name")} ${localStorage.getItem("last-name")}! Click on a hero to learn more about them.</p>
+    <p>Hello, ${localStorage.getItem("first-name")} ${localStorage.getItem("last-name")}! You have passed the morality check. Click on a hero to learn more about them.</p>
 `
 
 $div.innerHTML = `
@@ -21,7 +21,6 @@ fetch(`https://akabab.github.io/superhero-api/api/all.json`)
             .forEach(superhero =>
                 buildList(superhero))
     })
-
 
 function buildList(superhero) {
     const $span = document.createElement("span")

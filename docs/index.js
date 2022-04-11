@@ -19,9 +19,17 @@ $form.addEventListener("submit", (event) => {
     const firstName = formData.get("first-name")
     const lastName = formData.get("last-name")
     $submit.value = "Done!"
+    $submit.style.color = "rgb(35, 255, 134)"
+    $submit.style.border = "solid 1px rgb(35, 255, 134)"
 
     localStorage.setItem("first-name", firstName)
     localStorage.setItem("last-name", lastName)
-    console.log(localStorage.getItem("first-name"), localStorage.getItem("last-name"))
+
+    const bottomHalf = document.querySelectorAll(".hidden")
+    bottomHalf.forEach(element => {
+        element.classList.remove("hidden")
+    })
 })
 
+const h1 = document.querySelector(".Title")
+h1.textContent = `${localStorage.getItem("first-name")},Choose Your Affilliation`

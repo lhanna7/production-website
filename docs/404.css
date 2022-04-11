@@ -1,0 +1,19 @@
+body {
+    background-image: url(images/error.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    transition: 1s;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}

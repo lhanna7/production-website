@@ -66,6 +66,10 @@ a:hover {
     font-size: 130%;
 }
 
+a:visited {
+    color: #e7a730;
+}
+
 h1 {
     color: white;
     text-align: center;
