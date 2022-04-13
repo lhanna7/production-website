@@ -3,7 +3,7 @@ const $div = document.querySelector("div")
 const $h1 = document.querySelector("h1")
 
 $h1.innerHTML = `
-    <p>Hello, ${localStorage.getItem("first-name")} ${localStorage.getItem("last-name")}! Welcome to the dark side. Click on a villain to learn more about them.</p>
+    <p>Hello, ${localStorage.getItem("first-name")} ${localStorage.getItem("last-name")}! You have passed the morality check. Click on a hero to learn more about them.</p>
 `
 
 $div.innerHTML = `
@@ -14,22 +14,21 @@ fetch(`https://akabab.github.io/superhero-api/api/all.json`)
     .then((response) => response.json())
     .then((listOfSupers) => {
         listOfSupers
-            .filter(supervillain => {
-                console.log(supervillain)
-                return supervillain.biography.alignment === "bad"
+            .filter(superhero => {
+                return superhero.biography.alignment === "good"
             })
-            .forEach(supervillain =>
-                buildList(supervillain))
+            .forEach(superhero =>
+                buildList(superhero))
     }).catch(error => {
         console.error(error.message)
+        window.location.href = "404.html"
     })
 
-function buildList(supervillain) {
+function buildList(superhero) {
     const $span = document.createElement("span")
     $span.innerHTML = `
-        <a href="stats.html?id=${supervillain.id}">${supervillain.name}</a>
+        <a href="stats.html?id=${superhero.id}">${superhero.name}</a>
     `
     $main.append($span)
 }
-
 
